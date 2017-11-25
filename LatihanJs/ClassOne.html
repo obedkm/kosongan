@@ -1,0 +1,52 @@
+<!DOCTYPE Html> 
+<html lang="en">
+<head>
+	<meta charset="utf8"/>
+	<title> Javascript Introduction  </title>
+	<script type="text/Javascript"> 
+		// Just try to write a JS
+		// document.write("Hello World </br>");
+		// document.write("My Name is Mr. Kharistian </br>");
+
+		// var x = 5;
+		// document.write('I have ' + x + ' apples');
+		
+		
+		function makeAwesome(){
+			var c = new Array();
+			c[0] = "Aku";
+			c[1] = "Kamu";
+			c[2] = "Dia";
+			c[3] = "Mereka";
+			c[4] = "Kalian";
+
+			var d = Array("satu","dua");
+			document.write("I want to make "+ d[1] +" awesome!");
+
+		}
+		var image_tracker = 'M';
+		function change(){
+			var img = document.getElementById('smiley');
+			if (image_tracker == 'M') {
+				img.src = 'sad.jpg';
+				image_tracker = 'S';
+			} else {
+				img.src = 'smiley.jpg';
+				image_tracker = 'M';
+			}
+		}
+
+		var timer = setInterval('change()',5);
+
+	</script>
+</head>
+<body>
+	<input type="button" value="Tekan" name="click" onclick="clearInterval(timer);" />
+	<br/>
+	<img src="smiley.jpg" alt="smiley face" id="smiley" >
+	
+
+</body>
+
+</html>
+
